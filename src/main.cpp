@@ -5,7 +5,7 @@
 /**
  * Enable ESP-NOW or WiFi or use Serial
  */
-#define CONNECTION_TYPE SERIAL // SERIAL or WIFI or ESP_NOW
+#define CONNECTION_TYPE WIFI // SERIAL or WIFI or ESP_NOW
 
 #if CONNECTION_TYPE != SERIAL
 // Emits extra events to Serial that show network communication, set to false to save memory and make faster
@@ -35,7 +35,7 @@
 #define WIFI_PASSWORD "WiFi Password"
 #endif
 
-#define BRIDGE_PORT 10001 // Perle TruePort uses port 10,001 for the first serial routed to the client
+#define BRIDGE_PORT 10028 // Perle TruePort uses port 10,001 for the first serial routed to the client
 
 #include <TcpSerialBridge2.h>
 #endif // end CONNECTION_TYPE == WIFI
@@ -54,7 +54,7 @@ FullLoopbackStream incomingStream;
 
 
 // Title of the device
-#define DEVICE_NAME "ESP-SimHub Device" //{"Group":"General","Name":"DEVICE_NAME","Title":"Device name,\r\n make sure to use a unique name when using multiple arduinos","DefaultValue":"SimHub Dash","Type":"string","Template":"#define DEVICE_NAME \"{0}\""}
+#define DEVICE_NAME "GNK RS V2" //{"Group":"General","Name":"DEVICE_NAME","Title":"Device name,\r\n make sure to use a unique name when using multiple arduinos","DefaultValue":"SimHub Dash","Type":"string","Template":"#define DEVICE_NAME \"{0}\""}
 
 // Known working features:
 //  
